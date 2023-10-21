@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const AddShift = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
-  const [shift, setShift] = useState("");
+  const [shift, setShift] = useState("Morning");
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
   const [loading, setLoading] = useState(false);
