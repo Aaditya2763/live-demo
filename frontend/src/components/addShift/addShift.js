@@ -33,7 +33,7 @@ const AddShift = () => {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    if (name.length < 3) {
+    if (name.length < 3 ) {
       alert("Please enter a valid name");
       return;
     }
@@ -94,6 +94,7 @@ const AddShift = () => {
                 value={shift}
                 onChange={(e) => setShift(e.target.value)}
               >
+                <option  selected>Selcect Shift</option>
                 <option value="Morning">Morning</option>
                 <option value="Evening">Evening</option>
                 <option value="Night">Night</option>
