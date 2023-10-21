@@ -20,7 +20,7 @@ const Table = () => {
 
   const fetchTableData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/schedule"); // Use axios.get to make a GET request
+      const response = await axios.get("https://demo-backend-epem.onrender.com/schedule"); // Use axios.get to make a GET request
       setData(response.data); // Access the data property from the response
       setLoading(false);
       setError(false)
@@ -42,7 +42,7 @@ const Table = () => {
 
       alert("Are You sure You wanted to delete it")
 
-      await axios.delete(`http://localhost:5000/shift/delete/${id}`); // Use axios.get to make a GET request
+      await axios.delete(`https://demo-backend-epem.onrender.com/shift/delete/${id}`); // Use axios.get to make a GET request
       // Access the data property from the response
       setLoading(false);
       setMessage("Shift deleted Successfully ");

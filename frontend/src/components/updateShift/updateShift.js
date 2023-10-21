@@ -18,7 +18,7 @@ const UpdateShift = () => {
     // Fetch the data for the specified shift using the 'id' parameter
     const fetchShiftData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/shift/${id}`);
+        const response = await axios.get(`https://demo-backend-epem.onrender.com/shift/${id}`);
         const shiftData = response.data;
         setName(shiftData.Shift.name);
         setLoading(false);
@@ -34,7 +34,7 @@ const UpdateShift = () => {
   const updateData = async (data) => {
     try {
       setLoading(true);
-      const response = await axios.patch(`http://localhost:5000/shift/update/${id}`, data);
+      const response = await axios.patch(`https://demo-backend-epem.onrender.com/shift/update/${id}`, data);
       if (!response) {
         setError('Try again');
         setLoading(false)
