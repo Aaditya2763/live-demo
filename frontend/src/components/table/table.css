@@ -1,0 +1,133 @@
+.title {
+    background-image: linear-gradient(to right, #ff0404, #b0a1fd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    padding-top: 30px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.table {
+    width: 100%;
+
+    border-bottom: 1px solid rgb(130, 27, 204);
+    overflow-x: scroll;
+    margin-top: 50px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border: 1px solid rgb(110, 3, 250);
+    border-radius: 20px;
+}
+
+.operations {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+
+    justify-content: center;
+
+}
+
+.tableHeading {}
+
+.button-danger {
+    margin-right: 5px;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid red
+}
+
+.button-danger:hover {
+    background-color: red;
+    color: white;
+}
+
+.loading {
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    position: relative;
+    width: 400px;
+    border: 1px solid green;
+    background-color: rgb(133, 208, 133);
+    color: white;
+    border-radius: 10px;
+    margin: 2px 5px;
+}
+
+.button-success {
+    margin-right: 5px;
+    width: 98%;
+    cursor: pointer;
+    color: green;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid green
+}
+
+.button-success:hover {
+    background-color: green;
+    color: white
+}
+
+.updateBtn {
+    color: green;
+    text-decoration: none;
+}
+
+.updateBtn:hover {
+    color: white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 850px) {
+    .table {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid rgb(130, 27, 204);
+        overflow-x: scroll;
+    }
+
+    .message {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .operations {
+        flex-direction: column;
+    }
+
+    .button-danger {
+        margin-top: 5px;
+    }
+
+    .tableHeading {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tablebody {
+        display: flex;
+        flex-direction: row;
+        border-left: 2px solid black;
+    }
+
+    .tableitem {
+        display: flex;
+
+        flex-direction: column;
+        text-align: center;
+    }
+}
