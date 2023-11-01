@@ -62,7 +62,7 @@ const Table = () => {
 
   return (
     <>
-      <h1 className="title">React Table</h1>
+      <h1 className="title">Schedule Table</h1>
       {loading && <div className="loading"><h2>Loading...</h2></div>}
       {!data && !loading && <div className="loading"><h1>No Shift Found Click on add shift to create a shift</h1>
      
