@@ -15,7 +15,7 @@ const Dummy_Schedule = [
 // Function to seed the database with sample data
 async function SeedUser() {
   // Remove all existing records in the Schedule collection
-  await Schedule.deleteMany();
+  // await Schedule.deleteMany();
 
   // Insert the sample data into the Schedule collection
   await Schedule.insertMany(Dummy_Schedule);
